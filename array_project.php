@@ -14,7 +14,7 @@
     <div class="container mt-5">
       <h3 class="text-center mb-4">Practice Array - Package Form</h3>
 
-      <form action="" method="post" class="border p-4 shadow-sm rounded">
+      <form action="price-save.php" method="post" class="border p-4 shadow-sm rounded">
         <div class="mb-3">
           <input type="text" name="title" class="form-control" placeholder="Package Title">
         </div>
@@ -27,7 +27,7 @@
         
         <div class="field_wrapper mb-3">
           <div class="input-group">
-            <input type="text" name="field_name[]" class="form-control" placeholder="Add Feature">
+            <input type="text" name="featurelist[]" class="form-control" placeholder="Add Feature">
             <button class="btn btn-success add_button" type="button" title="Add field">
               <img src="https://img.icons8.com/ios-filled/24/ffffff/plus.png"/>
             </button>
@@ -43,7 +43,7 @@
           var maxField = 10; //Input fields increment limitation
           var addButton = $('.add_button'); //Add button selector
           var wrapper = $('.field_wrapper'); //Input field wrapper
-          var fieldHTML = '<div class="input-group mb-2"><input type="text" name="field_name[]" class="form-control" placeholder="Add Feature"/><button class="btn btn-danger remove_button" type="button"><img src="https://img.icons8.com/ios-glyphs/24/ffffff/minus.png"/></button></div>'; //New input field html
+          var fieldHTML = '<div class="input-group mb-2"><input type="text" name="featurelist[]" class="form-control" placeholder="Add Feature"/><button class="btn btn-danger remove_button" type="button"><img src="https://img.icons8.com/ios-glyphs/24/ffffff/minus.png"/></button></div>'; //New input field html
           var x = 1; //Initial field counter is 1
           
           // Once add button is clicked
